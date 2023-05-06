@@ -1,0 +1,139 @@
+.container{
+    width: 95vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    position: relative;
+}
+
+.txt-white{
+    color:antiquewhite;
+}
+
+.txt-blue{
+    color: #1055BB;
+}
+.font-opensans{
+    font-family: 'Open Sans', sans-serif;
+}
+.header{
+    background-color: white;
+    color: black;
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 100;
+}
+
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:1rem;
+}
+
+.search-bar {
+    width: 50%;
+    background-color: #EEF4FD;
+    border: none;
+    padding: 3px;
+    margin: 4px;
+}
+
+
+.table-row-style{
+    background-color: #FAFAFA;
+    margin-bottom: "24px";
+    cursor:pointer
+}
+.sidebarx{
+    background-color: #EEF4FD;
+    padding: 1rem;
+    overflow:auto;
+    border-radius: 20px;
+    height:100vh;
+    position:fixed;
+    left:0;
+    top:10vh;
+    bottom:0;
+}
+
+.sidebar-section{
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    justify-content: start;
+    align-items: start;
+    margin-left: 1rem;
+}
+
+.sidebar-section-checkbox{
+    margin-left: 0px;
+}
+
+.row-expandcard-container{
+    display: flex;
+    flex-direction: column;
+    background-color: #F4F9FF;
+    width: 100%;
+    padding-left: 2rem;;
+}
+
+.row-expandcard-container-row{
+    display: flex;
+    flex-direction: row;
+    gap: 6rem;
+}
+
+.flex-col-start{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap:4px;
+}
+
+.row-expandcard-container-row-image{
+    width:80px;
+    height:80px;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+.flex-row-start{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: start;
+    gap:20px;
+}
+
+i{
+    color: #A2A3A5;
+}
+
+.with-sidebar-layout {
+    background-color: white;
+}
+
+@media (min-width: 768px) {
+    .with-sidebar-layout {
+        margin-left: 320px;
+    }
+    .menu {
+        display: none;
+      }
+}
+
+@media (max-width: 767px) {
+    .with-sidebar-layout {
+        margin-left: 0px;
+    }
+}
